@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
 }
-
+/* header */
 .header {
     position: relative;
     width: 100%;
@@ -27,4 +27,59 @@
     width: 100%;
     height: 20vh;
 }
+
+/* intro */
+  
+.intro {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #ffff;
+  text-align: left; 
+}
+  
+  .overskrift_1 {
+    font-size: 3em;
+    color: #F7B09C; 
+    font-family: 'Karla', sans-serif;
+  }
+
+  .overskrift_2 {
+    font-size: 4em;
+    color: #EFE9DB; 
+    font-family:'Rock Salt';
+  }
+  
+  .form {
+    flex: 1; 
+    position: relative;
+    width: 50%; 
+  }
+  
+  .form img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro .text {
+    flex: 1; 
+    position: relative;
+    width: 50%; 
+    color: white;
+    padding-left: 20px; 
+    z-index: 1; 
+  }
+
+  .form, .intro .text {
+    overlap: none; 
+  }
+  
+  /* Adjustments for overlapping design */
+  /* You might need to adjust the 'left' and 'width' properties based on your exact needs */
+  .intro .text {
+    position: absolute;
+    left: 30%; /* Adjust this value as needed to overlap the image */
+    width: 70%; /* Adjust width to maintain text within the right side */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay */
+  }
 
