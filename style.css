@@ -10,12 +10,15 @@ body {
 }
 
 /* header */
+
 .header {
     position: relative;
     width: 100%;
     height: 50vh;
     background-color: #F7B09C;
     display: flex;
+    position: relative; 
+
     overflow: hidden; 
 }
 
@@ -832,13 +835,4 @@ video::cue {
 
 
   }
-    
-    
-    
-    
-    
-    
-   
-
-
 
