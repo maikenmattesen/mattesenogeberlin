@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box; 
 }
+
+body {
+  font-size: 1em;
+  background-color: #F6F6EE;
+}
+
 /* header */
 .header {
     position: relative;
@@ -10,7 +16,6 @@
     height: 50vh;
     background-color: #F7B09C;
     display: flex;
-    position: relative; 
     overflow: hidden; 
 }
 
@@ -28,58 +33,812 @@
     height: 20vh;
 }
 
-/* intro */
-  
-.intro {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  background-color: #ffff;
-  text-align: left; 
+.header_link {
+  display: flex;                
+  justify-content: center;     
+  align-items: center;                       
+  width: 100%; 
+  height: auto;
+  word-wrap: break-word;
+  gap: 3em;
+  padding-bottom: 10%;
 }
-  
-  .overskrift_1 {
-    font-size: 3em;
-    color: #F7B09C; 
-    font-family: 'Karla', sans-serif;
-  }
 
-  .overskrift_2 {
-    font-size: 4em;
-    color: #EFE9DB; 
-    font-family:'Rock Salt';
-  }
-  
-  .form {
-    flex: 1; 
-    position: relative;
-    width: 50%; 
-  }
-  
-  .form img {
-    width: 100%;
-    height: auto;
-  }
+.header_link a {
+  color: white; 
+  font-size: 3em; 
+  font-family: 'Karla', sans-serif; 
+  text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.5);
+  text-decoration: none; 
+}
 
-  .intro .text {
-    flex: 1; 
-    position: relative;
-    width: 50%; 
-    color: white;
-    padding-left: 20px; 
-    z-index: 1; 
-  }
+.header_link a:link, .header_link a:visited {
+  color: white;
+  text-decoration: none; 
+}
 
-  .form, .intro .text {
-    overlap: none; 
-  }
-  
-  /* Adjustments for overlapping design */
-  /* You might need to adjust the 'left' and 'width' properties based on your exact needs */
-  .intro .text {
+.header_link a:hover, .header_link a:focus {
+  color: #CCCCCC; 
+  text-decoration: none; 
+}
+
+/* intro */
+.baggrund_intro {
+  background-color: #FFFFFF;
+  height: 100vh;
+}
+
+.indhold_intro {
+  display: flex;
+  align-items: flex-start; 
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+  .container_intro {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 2;
+  width: 100%;
+}
+
+.overskrift_1, .overskrift_2 {
+  font-size: 3em;
+}
+
+.overskrift_1 {
+  color: #F7B09C;
+  font-family: 'Karla', sans-serif;
+}
+
+.overskrift_2 {
+  color: #EFE9DB;
+  font-family: 'Rock Salt';
+}
+
+.intro_text {
+  padding-top: 5%;
+  font-family: 'Karla', sans-serif;
+  font-size: 2em;
+  color: #F7B09C;
+  z-index: 100;
+}
+
+.form {
+  position: absolute; 
+  margin-top: 10%;
+  right: -2%;
+  z-index: 1;
+}
+
+.form img {
+  width: 80vh; 
+}
+
+/* striber */
+.kurve-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0%;
+  z-index: 1;
+}
+
+.pink-kurve {
+position: absolute;
+margin-top: 42%;
+}
+
+.beige-kurve {
+  position: absolute;
+  margin-top: 44%;
+}
+.orange-kurve {
+  position: absolute;
+  margin-top: 46%;
+}
+
+.streg-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; 
+  z-index: 1;
+  margin-top: 68%;
+   }
+
+   .pink-streg {
     position: absolute;
-    left: 30%; /* Adjust this value as needed to overlap the image */
-    width: 70%; /* Adjust width to maintain text within the right side */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay */
+    right: 11.5%;
+    }
+    
+    .beige-streg {
+      position: absolute;
+      right: 9.8%;
+    }
+    .orange-streg {
+      position: absolute;
+      margin-right: 7.9%;
+    }
+  
+
+   .video_1, .baggrund_cases, .footer {
+    position: relative;
+    z-index: 2; 
   }
+
+ /* Hvem er vi */
+ .baggrund_hvem {
+ background-color: #F6F6EE;
+}
+
+.container_1 {
+  position: relative;
+}
+
+.container_2 {
+  position: relative;
+  margin-bottom: 2%;
+}
+
+ .hvem {
+    font-family: 'Rock Salt';
+    font-size: 3em;
+    color: #F7B09C;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+  }
+
+  .parent-container_1 {
+    position: relative; 
+    height: 60vh; 
+    padding-top: 1%;
+    margin: 0%;
+  }
+
+  .rektangel_1 {
+      position: absolute; 
+      margin-left: 0%;
+      margin-right: 0%;
+      height: 60vh; 
+      width: 100%; 
+      z-index: 2;
+    }
+
+  .Vandfarve_effekt_1 {
+    position: absolute;
+    width: 40vw; 
+    height: auto;  
+    z-index: 3; 
+  }
+
+  .profil-photo_1 {
+    width: 18vw; 
+    height: 40vh;
+    margin-left: 10%;
+    top: 20%;
+    position: absolute; 
+    z-index: 4;
+  }
+
+    .container_profil_1 {
+      position: absolute;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;  
+      flex-grow: 1; 
+      padding-left: 50%; 
+      padding-top: 5%;
+      z-index: 5;
+    }
+
+    .navn_1, .bio_1 {
+      display: block;
+      width: 100%;
+       }
+
+       .navn_1{
+        font-family: 'Karla', sans-serif;
+        font-size: 3em;
+        color: #EFE9DB;
+         }
+
+           .bio_1 {
+            font-family: 'Karla', sans-serif;
+            font-size: 1.8em;
+            color:#FFFFFF;
+             }
+
+.parent-container_2 {
+position: relative; 
+display: flex; 
+justify-content: flex-end;
+align-items: center;
+margin-top: 5%;
+margin-left: 0%;
+margin-right: 0%;
+height: 60vh; 
+padding-top: 10%;
+}
+
+.rektangel_2 {
+  position: absolute; 
+  margin-left: 0;
+  margin-right: 0;
+  height: 60vh; 
+  width: 100%; 
+  z-index: 2;
+}
+
+  .Vandfarve_effekt_2 {
+    position: absolute;
+    width: 40vw; 
+    height: auto;  
+    z-index: 3; 
+  }
+
+  .profil-photo_2 {
+    position: absolute; 
+    margin-right: 10%;
+    width: 20vw; 
+    height: 40vh; 
+    z-index: 4;
+  }
+
+  .profil-photo_2, .Vandfarve_effekt_2 {
+    align-self: flex-end;
+    top: 20%;
+    bottom: 0%;
+    }
+
+    .container_profil_2 {
+      position: absolute;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;  
+      flex-grow: 1; 
+      padding-right: 45%; 
+      z-index: 5; 
+    }
+
+    .navn_2, .bio_2 {
+      align-self: center; 
+      width: 100%;
+       }
+
+       .navn_2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 3em;
+        color: #EFE9DB;
+         }
+
+      .bio_2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 1.8em;
+        color:#FFFFFF;
+           }
+
+  .pil_op {
+    margin-top: 0%;
+    margin-left: 15%;
+    position: absolute;
+    display: flex;
+    z-index: 5; 
+  }
+  
+  .pil_op_link:hover {
+    opacity: 0.8;
+  }
+
+  .pil_op_img {
+      width: 5vw; 
+      height: auto;
+      cursor: pointer; 
+    }
+
+.video_1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+.video_1_str {
+  width: 80vw;
+}
+
+video::cue {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1;
+}
+
+   /* ydelser */
+   .baggrund_ydelser {
+   background-color: #FFFFFF;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   position: relative;
+   border-radius: 15%;
+   z-index: 2; 
+  }
+
+  .container_ydelser {
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start;
+    padding: 4%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+   .ydelser {
+    font-family: 'Rock Salt';
+    font-size: 3em;
+    color: #A5BFB3;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    width: auto; 
+  }
+
+  .video_2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .video_2_str {
+    width: 80vw;
+    max-width: 100%;
+  }
+
+  .ydelser_tekst {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.8em;
+    color: #A5BFB3;
+    display: flex;
+    padding-top: 4%;
+    text-align: center;
+    margin-left: 10%;
+    width: 45%; 
+    word-wrap: break-word;
+  }
+
+  .pil_op_højre {
+    bottom: -4%;
+    position: absolute;
+    right: 15%; 
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .pil_op_link:hover {
+    opacity: 0.8;
+  }
+
+  .pil_op_img_højre {
+      width: 5vw; 
+      height: auto;
+      cursor: pointer; 
+    }
+
+  /* cases */
+  .baggrund_cases {
+    background-color: #A5BFB3;
+    border-radius: 15%;
+    padding: 5%;
+  }
+
+  .cases {
+    font-family: 'Rock Salt';
+    font-size: 3em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+  }
+
+  .effekt_cases {
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
+    margin: auto;
+  }
+
+  .img_container {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: 0.5s ease;
+    padding: 4vw;
+    justify-content: center; 
+  }
+
+  .case_photo {
+  max-width: calc(33.333% - 4vw); 
+  margin: 0 2vw;
+  display: none;
+}
+
+  .pil_container { 
+    cursor: pointer;
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    padding: 1%;
+}
+
+.pil_cases {
+    width: 3vw; 
+    height: auto;
+    display: block; 
+    transform: rotate(90deg);
+}
+
+.prikker {
+  display: flex;
+  justify-content: center;
+}
+
+ /* kontakt */
+  .baggrund_kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    padding: 5%;
+  }
+
+  .kontakt {
+    width: 70%;
+    height: auto;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+
+/* footer */
+.pil_op_højre_footer {
+  padding-top: 2%;
+  position: absolute;
+  right: 15%; 
+  display: flex;
+  align-items: flex-end;
+  margin-top: -5%;
+  z-index: 2; 
+}
+
+.pil_op_link:hover {
+  opacity: 0.8;
+}
+
+.pil_op_img_højre {
+    width: 5vw; 
+    height: auto;
+    cursor: pointer; 
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    height: 40vh;
+    background-color: #F7B09C;
+  }
+
+  .footer_tekst {
+    position: absolute; 
+    color:white; 
+    font-size: 32px; 
+    font-family: 'Rock Salt';  
+    word-wrap: break-word; 
+    margin-left: 8%;
+    padding: 2%;
+  }
+
+  .sm_logo {
+    position: relative;
+    margin-left: 60%;
+    padding-top: 5%;
+    display: flex;
+    gap: 10%; 
+  }
+
+  /* Mindre skærme */
+
+@media (max-width: 80em) { 
+
+  /* header */
+    .header {
+      
+      height: 40vh; 
+    }
+  
+    .logo {
+      height: 20vh; 
+      margin: 2%; 
+    }
+  
+    .wave {
+      height: 15vh; 
+    }
+  
+    .header_link {
+      gap: 2em; 
+      padding-bottom: 5%; 
+    }
+  
+    .header_link a {
+      font-size: 2em; 
+    }
+
+/* intro */
+      .indhold_intro {
+        margin-bottom: 20%; 
+      }
+    
+      .overskrift_1, .overskrift_2 {
+        font-size: 2em; 
+      }
+    
+      .intro_text {
+        padding-top: 2%; 
+        font-size: 1.5em; 
+      }
+    
+      .form {
+        margin-top: 5%; 
+        right: 0; 
+        width: 100%; 
+      }
+    
+      .form img {
+        width: 50vh; 
+        max-width: 100%; 
+      }
+
+/* hvem */
+      .container_1 {
+        margin-top: 25%; 
+      }
+    
+      .hvem {
+        font-size: 2em; 
+      }
+    
+      .parent-container_1, .parent-container_2 {
+        height: 30vh; 
+      }
+    
+      .rektangel_1, .rektangel_2 {
+        height: 30vh; 
+      }
+    
+      .Vandfarve_effekt_1, .Vandfarve_effekt_2 {
+        width: 30vw; 
+      }
+    
+      .profil-photo_1, .profil-photo_2 {
+        width: 15vw; 
+        height: 30vh; 
+      }
+    
+      .container_profil_1, .container_profil_2 {
+        padding-left: 25%; 
+        padding-top: 2.5%; 
+      }
+    
+      .navn_1, .navn_2 {
+        font-size: 2em; 
+      }
+    
+      .bio_1, .bio_2 {
+        font-size: 1em; 
+      }
+    
+      .pil_op_img {
+        width: 3vw; 
+      }
+      
+/* ydelser */
+.baggrund_ydelser {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.container_ydelser {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 2.5%;
+}
+
+.ydelser {
+  font-size: 2.5em;
+}
+
+.ydelser_tekst {
+  font-size: 1.5em;
+  margin-left: 5%;
+  width: 50%;
+}
+
+.pil_op_højre {
+  right: 10%; 
+  padding-top: 1%;
+}
+
+.pil_op_img_højre {
+  width: 4vw;
+}
+
+/* cases */
+.cases {
+  font-size: 2.5em; 
+  margin-top: 5%; 
+}
+
+.img_container {
+  padding: 2vw; 
+}
+
+.case_photo {
+  max-width: calc(50% - 4vw); 
+  margin: 0 1vw; 
+  display: block; 
+}
+
+.pil_container {
+  right: 5%; 
+  width: 4vw; 
+  padding: 0.5%; 
+}
+
+.pil_cases {
+  width: 2.5vw; 
+  transform: rotate(90deg); 
+}
+
+/* kontakt */
+.baggrund_kontakt {
+  margin-top: 5%; 
+}
+
+.kontakt {
+  width: 60%; 
+}
+    }
+
+@media (max-width: 30em) { 
+
+   /* header */
+   .header {
+    height: 30vh; 
+  }
+
+  .logo {
+    height: 15vh; 
+    margin: 1%; 
+  }
+
+  .wave {
+    height: 10vh; 
+  }
+
+  .header_link {
+    gap: 1em; 
+    padding-bottom: 2%; 
+  }
+
+  .header_link a {
+    font-size: 1.5em; 
+  }
+  
+    /* intro */
+    .indhold_intro {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      margin: 2% 5% 40% 5%;
+      position: relative;
+    }
+  
+    .container_intro {
+      position: relative; 
+      width: 100%;
+      z-index: 2;
+    }
+  
+      .overskrift_1, .overskrift_2 {
+        font-size: 2em; 
+      }
+  
+    .intro_text {
+      padding-top: 5%;
+      font-size: 1.2em; 
+      text-align: center; 
+    }
+  
+    .form {
+      position: relative; 
+      margin-top: 5%; 
+      width: 100%; 
+      display: flex;
+      justify-content: center; 
+    }
+  
+    .form img {
+        width: 40vh;   
+    }
+
+      /* hvem */
+
+    .container_1 {
+      margin-top: 25%; 
+    }
+  
+    .hvem {
+      font-size: 2em; 
+    }
+  
+    .parent-container_1, .parent-container_2 {
+      height: 30vh; 
+    }
+  
+    .rektangel_1, .rektangel_2 {
+      height: 30vh; 
+    }
+  
+    .Vandfarve_effekt_1, .Vandfarve_effekt_2 {
+      width: 30vw; 
+    }
+  
+    .profil-photo_1, .profil-photo_2 {
+      width: 15vw; 
+      height: 30vh; 
+    }
+  
+    .container_profil_1, .container_profil_2 {
+      padding-left: 25%; 
+      padding-top: 2.5%; 
+    }
+  
+    .navn_1, .navn_2 {
+      font-size: 2em; 
+    }
+  
+    .bio_1, .bio_2 {
+      font-size: 1em; 
+    }
+  
+    .pil_op_img {
+      width: 3vw; 
+    }
+
+     /* hvem */
+
+  
+
+
+
+  }
+    
+    
+    
+    
+    
+    
+   
+
+
 
