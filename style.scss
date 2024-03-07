@@ -190,7 +190,7 @@ body {
   z-index: 2;
 }
 
-.Vandfarve_effekt_1 {
+.vandfarve_effekt_1 {
   position: absolute;
   width: 40vw;
   height: auto;
@@ -254,7 +254,7 @@ body {
   z-index: 2;
 }
 
-.Vandfarve_effekt_2 {
+.vandfarve_effekt_2 {
   position: absolute;
   width: 40vw;
   height: auto;
@@ -551,11 +551,13 @@ body {
 }
 
 /* lille skærm  */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 412px) {
+
   /* header */
   .header {
     height: 15vh;
   }
+  
   .logo {
     height: 8vh;
     padding: 4%;
@@ -597,7 +599,7 @@ body {
 /* striber */
 .vandfald_1 {
   margin-top: 56vh;
-  width: 32vw;
+  width: 26.5%;
 }
 
   /* hvem */
@@ -608,7 +610,7 @@ body {
   .hvem {
   font-size: 1rem;
   justify-content: left;
-  margin-left: 4%;
+  margin-left: 30%;
   max-width:fit-content
   }
 
@@ -618,27 +620,26 @@ body {
   }
   
   .rektangel_1 {
-    margin-top: 22vh;
-    position: absolute;
-    height: 30vh;
+    margin-top: 40%;
+    height: 42%;
     width: 100%;
   }
   
-  .Vandfarve_effekt_1 {
-    width: 100vw;
-    height: 25vh;
+  .vandfarve_effekt_1 {
+    width: 100%;
+    height: 33%;
   }
   
   .profil-photo_1 {
-    width: 40vw;
-    height: auto;
-    margin-left: 25%;
+    width: 37%;
+    height: 36%;
+    margin-left: 30%;
     top: 0%;
   }
   
   .container_profil_1 {
-    margin-top: 22.5vh;
-    padding-left: 4%;
+    margin-top: 46%;
+    padding-left: 7%;
   }
   
   .navn_1 {
@@ -655,33 +656,28 @@ body {
   }
   
   .rektangel_2 {
-    margin-top: 8vh;
-    height: 30vh;
+    margin-top: 8%;
+    height: 60%;
     width: 100%;
   }
   
-  .Vandfarve_effekt_2 {
-    width: 100vw;
-    height: 25vh;
-    margin-bottom: 30vh;
+  .vandfarve_effekt_2 {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 80%;
     left: 1%;
-    z-index: 3;
   }
   
   .profil-photo_2 {
-    width: 50vw;
+    width: 40%;
     height: auto;
-    margin-right: 25%;
-    top: 0%;
+    margin-right: 33%;
     margin-bottom: 30vh;
   }
   
   .container_profil_2 {
-    position: absolute;
-    margin-top: 8vh;
-    padding-right: 3%;
-    padding-left: 4%;
-    z-index: 5;
+    margin-top: 8%;
+    padding-right: 8%;
   }
   
   .navn_2 {
@@ -696,7 +692,6 @@ body {
     bottom: 5%;
   }
   
-
   .video_1_str {
     width: 80vw;
   }
@@ -717,12 +712,13 @@ body {
   
   .video_2_str {
     width: 80vw;
+    margin-left: 6%;
   }
   
   .ydelser_tekst {
     font-size: 0.9rem;
     width: 80vw;
-    margin-left: 0%;
+    margin-left: 10%;
   }
   
   .pil_op_højre {
@@ -766,76 +762,83 @@ body {
     margin-left: 85%;
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    width: 9%;
+    padding-top: 2%;
   }
 
   #sm_logo_id {
-   padding: 20%;
-   padding-bottom: 5%;
+   padding: 15%;
   }
 }
 
- /* mindre skærme */
+@media only screen and (max-width: 392px) {
 
-@media only screen and (max-width: 360px){
-
-  /* header */
-  .header {
-    height: 15vh;
-    padding: 4%;
-  }
-
-  .wave {
-    height: 4vh;
-  }
-
-  .header_link {
-    gap: 0.2rem;
-    padding-right: 2%;
-  }
-  .header_link a {
-      font-size: 0.9rem;
-    }
-  
-  /* intro */
-  .baggrund_intro {
-    height: 80vh;
-  }
-
-  .form {
-    margin-top: 55vh;
-  }
-
-/* striber */
+  /* striber */
 .vandfald_1 {
-  position: relative;
   margin-top: 56vh;
-  width: 26vw;
+  width: 28%;
 }
 
   /* hvem */
-  .container_1 {
-    margin-top: 10%;
+.container_profil_2 {
+  padding-right: 6%;
+}
+
+  /* footer */
+.sm_logo {
+  width: 9%;
+}
+}
+
+@media only screen and (max-width: 372px) {
+
+  /* striber */
+.vandfald_1 {
+  margin-top: 56vh;
+  width: 28%;
+}
+
+  /* hvem */
+  .profil-photo_1 {
+    width: 37%;
+    height: 34%;
   }
+
+  .parent-container_2 {
+    height: 38vh;
+  }
+
+  .container_profil_2 {
+    padding-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+
+  /* striber */
+.vandfald_1 {
+  margin-top: 56vh;
+  width: 29%;
+}
+
+  /* hvem */
 
   .hvem {
-  margin-left: 20%;
+    margin-left: 10%;
+    }
+
+    .parent-container_1 {
+      position: relative;
+      height: 63vh;
+    }
+
+  .profil-photo_1 {
+    width: 32%;
+    height: 28%;
   }
 
-  .Vandfarve_effekt_1 {
-    max-width: fit-content;
-    margin-left: 20%;
-}
-  
-  .profil-photo_1 {
-    width: 32vw;
-    height: auto;
-    margin-left: 34%;
-  }
-  
-  .container_profil_1 {
-    padding-top: 8%;
-    padding-left: 7%;
+  .rektangel_1 {
+    height: 35%;
   }
 
   .navn_1 {
@@ -846,22 +849,22 @@ body {
     font-size: 0.8rem;
   }
 
-  .Vandfarve_effekt_2 {
-    max-width: fit-content;
-    margin-left: 20%;
-}
-
   .parent-container_2 {
-    padding-top: 5%;
-    padding-left: 7%;
+    height: 35vh;
+  }
+
+  .vandfarve_effekt_2 {
+    margin-bottom: 95%;
+  }
+
+  .rektangel_2 {
+    height: 68%;
   }
   
-  .profil-photo_2 {
-    width: 40vw;
-    height: auto;
-    margin-right: 25%;
+  .container_profil_2 {
+    padding-right: 3%;
   }
- 
+
   .navn_2 {
     font-size: 1rem;
   }
@@ -869,32 +872,4 @@ body {
   .bio_2 {
     font-size: 0.8rem;
   }
-  
-  .pil_op {
-    bottom: 5%;
-  }
-  
-  .video_1_str {
-    width: 80vw;
-  }
-  
-  /* ydelser */
- 
-  .video_2_str {
-    width: 80vw;
-    padding-left: 10%;
-  }
-  
-  .ydelser_tekst {
-    padding-left: 10%;
-  }
-
-  /* footer */
-  
-  .footer {
-    height: 20vh;
-  }
-
 }
-
-     
