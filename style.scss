@@ -550,7 +550,7 @@ body {
   gap: 10%;
 }
 
-/* Mindre skærme */
+/* lille skærm  */
 @media only screen and (max-width: 640px) {
   /* header */
   .header {
@@ -569,7 +569,7 @@ body {
     padding-right: 2%;
   }
   .header_link a {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   
   /* intro */
@@ -577,10 +577,6 @@ body {
     height: 70vh;
   }
 
-  .indhold_intro {
-    margin-bottom: 5%;
-    left: 4%;
-  }
   .overskrift_1, .overskrift_2 {
     padding-top: 5%;
     font-size: 1.2rem;
@@ -613,6 +609,7 @@ body {
   font-size: 1rem;
   justify-content: left;
   margin-left: 4%;
+  max-width:fit-content
   }
 
   .parent-container_1 {
@@ -653,10 +650,7 @@ body {
   }
   
   .parent-container_2 {
-    position: relative;
     height: 45vh;
-    margin-left: 0%;
-    margin-right: 0%;
     padding-top: 5%;
   }
   
@@ -781,5 +775,126 @@ body {
   }
 }
 
+ /* mindre skærme */
+
+@media only screen and (max-width: 360px){
+
+  /* header */
+  .header {
+    height: 15vh;
+    padding: 4%;
+  }
+
+  .wave {
+    height: 4vh;
+  }
+
+  .header_link {
+    gap: 0.2rem;
+    padding-right: 2%;
+  }
+  .header_link a {
+      font-size: 0.9rem;
+    }
+  
+  /* intro */
+  .baggrund_intro {
+    height: 80vh;
+  }
+
+  .form {
+    margin-top: 55vh;
+  }
+
+/* striber */
+.vandfald_1 {
+  position: relative;
+  margin-top: 56vh;
+  width: 26vw;
+}
+
+  /* hvem */
+  .container_1 {
+    margin-top: 10%;
+  }
+
+  .hvem {
+  margin-left: 20%;
+  }
+
+  .Vandfarve_effekt_1 {
+    max-width: fit-content;
+    margin-left: 20%;
+}
+  
+  .profil-photo_1 {
+    width: 32vw;
+    height: auto;
+    margin-left: 34%;
+  }
+  
+  .container_profil_1 {
+    padding-top: 8%;
+    padding-left: 7%;
+  }
+
+  .navn_1 {
+    font-size: 1rem;
+  }
+  
+  .bio_1 {
+    font-size: 0.8rem;
+  }
+
+  .Vandfarve_effekt_2 {
+    max-width: fit-content;
+    margin-left: 20%;
+}
+
+  .parent-container_2 {
+    padding-top: 5%;
+    padding-left: 7%;
+  }
+  
+  .profil-photo_2 {
+    width: 40vw;
+    height: auto;
+    margin-right: 25%;
+  }
+ 
+  .navn_2 {
+    font-size: 1rem;
+  }
+  
+  .bio_2 {
+    font-size: 0.8rem;
+  }
+  
+  .pil_op {
+    bottom: 5%;
+  }
+  
+  .video_1_str {
+    width: 80vw;
+  }
+  
+  /* ydelser */
+ 
+  .video_2_str {
+    width: 80vw;
+    padding-left: 10%;
+  }
+  
+  .ydelser_tekst {
+    padding-left: 10%;
+  }
+
+  /* footer */
+  
+  .footer {
+    height: 20vh;
+  }
+
+}
 
      
