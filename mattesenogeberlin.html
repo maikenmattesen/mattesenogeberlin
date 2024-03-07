@@ -4,30 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
     <title>Mediebureau Mattesen & Eberlin</title>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
     
 </head>
   <body>    
-=======
-    <title>Forside</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
->>>>>>> 80b80400d8c7becdc7b6d6388df47d0678885537
       <!--Header-->
       <header class="header">
-
         <div>
             <img src="logo.png" alt="M&E logo" class="logo">
             <img src="header.png" alt="Bølget header" class="wave">
         </div>
-<<<<<<< HEAD
 
         <div class="header_link">
           <a href="#hvem-er-vi">Hvem er vi?</a>
@@ -55,8 +43,8 @@
                        <p>Et medie bureau med ekspertise i 
                         <br>
                         animation, frontend-, og grafisk design.
-                        <br> 
-                        ned eller klik dig frem øverst på siden, for 
+                        <br>    <br> 
+                        Scroll ned eller klik dig frem øverst på siden, for 
                         <br>
                         at finde mere info om hvem vi er, hvad vi 
                         <br>
@@ -74,18 +62,8 @@
   
 <!-- Streger-->
   <figure >
-      <div class="kurve-container">
-        <img src="pink_kurve.png" alt="Pink kurve" class="pink-kurve">
-        <img src="beige_kurve.png" alt="Beige kurve" class="beige-kurve">
-        <img src="orange_kurve.png" alt="Orange kurve" class="orange-kurve">
-      </div>
-  </figure>
-
-  <figure>
-      <div class="streg-container">
-        <img src="pink.png" alt="Pink streg" class="pink-streg">
-        <img src="beige.png" alt="Beige streg" class="beige-streg">
-        <img src="orange.png" alt="Orange streg" class="orange-streg">
+      <div class="vandfald">
+        <img src="vandfald.png" alt="Farve vandfald" class="vandfald_1">
       </div>
     </figure>
 </section>
@@ -137,7 +115,7 @@
 
         <figure>
               <div class="pil_op">
-                <a href="Forside.html" class="pil_op_link">
+                <a href="mattesenogeberlin.html" class="pil_op_link">
                 <img src="Pil op.png" alt="pil op" class="pil_op_img">
                 </a>
               </div>
@@ -193,7 +171,7 @@
       </div>
     <figure>
       <div class="pil_op_højre">
-          <a href="Forside.html" class="pil_op_link">
+          <a href="mattesenogeberlin.html" class="pil_op_link">
           <img src="Pil op.png" alt="pil op" class="pil_op_img_højre">
           </a>
       </div>
@@ -228,9 +206,17 @@
 
         <figure>
           <div class="prikker">
-              <img src="Dots.png" alt="Prikker">
+              <img src="Dots.png" alt="Prikker" class="prikker_1">
           </div>
       </figure>
+
+      <figure>
+        <div class="pil_op_venstre">
+          <a href="mattesenogeberlin.html" class="pil_op_link">
+          <img src="Pil op.png" alt="pil op" class="pil_op_img">
+          </a>
+        </div>
+  </figure>   
   </section>
 </main>    
 
@@ -247,19 +233,19 @@
 <section class="footer">
 <footer>
   <div class="pil_op_højre_footer">
-    <a href="Forside.html" class="pil_op_link">
+    <a href="mattesenogeberlin.html" class="pil_op_link">
     <img src="Pil op.png" alt="pil op" class="pil_op_img_højre">
     </a>
   </div>
 
           <div class="footer_tekst">
-            <p> CVR: 12303003 <br/> Mobil: +45 97546211<br/> Email: kontakt@moge.com </p>
+            <p id="footer_tekst_id"> CVR: 12303003 <br/> Mobil: +45 97546211<br/> Email: kontakt@moge.com </p>
           </div>
       <figure>
           <div class="sm_logo">
-            <img src="linkedin_logo.png" alt="Linkedin logo"> 
-            <img src="instagram_logo.png" alt="Instagram logo">
-            <img src="facebook_logo.png" alt="Facebook logo">
+            <img src="linkedin_logo.png" alt="Linkedin logo" id="sm_logo_id"> 
+            <img src="instagram_logo.png" alt="Instagram logo" id="sm_logo_id">
+            <img src="facebook_logo.png" alt="Facebook logo" id="sm_logo_id">
           </div>
       </figure>    
 </footer>
@@ -273,27 +259,22 @@
   var slideIndex = 0;
 
   function showSlides() {
-    // Hide all slides
     slides.forEach(function(slide) {
       slide.style.display = "none";
     });
 
-    // Calculate the index for the next set of slides
     slideIndex++;
     if (slideIndex + 2 >= slides.length) {
       slideIndex = 0;
     }
 
-    // Show the next set of 3 slides
     slides[slideIndex].style.display = "block";
     slides[slideIndex + 1].style.display = "block";
     slides[slideIndex + 2].style.display = "block";
   }
 
-  // Set initial slide state
   showSlides();
 
-  // Bind the nextSlide function to the click event of the arrow
   document.querySelector('.pil_container').addEventListener('click', showSlides);
 });
 </script>  
@@ -301,7 +282,3 @@
   </body>
 </html>
 
-=======
-      </header>
-
->>>>>>> 80b80400d8c7becdc7b6d6388df47d0678885537

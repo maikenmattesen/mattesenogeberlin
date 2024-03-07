@@ -1,13 +1,21 @@
-@charset "UTF-8";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
+
+$color-primary_pink: #F7B09C;
+$color-primary_blå: #A5BFB3;
+$color-primary_gul: #E8B665;
+$color-secondary_beige: #EFE9DB;
+$color-secondary_offwhite: #F6F6EE;
+$color-secondary_white: #FFFFFF;
+$color-hover:#CCCCCC;
+
 
 body {
   font-size: 1rem;
-  background-color: #F6F6EE;
+  background-color: $color-secondary_offwhite;
 }
 
 /* header */
@@ -15,7 +23,7 @@ body {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-color: #F7B09C;
+  background-color: $color-primary_pink;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -49,7 +57,7 @@ body {
 }
 
 .header_link a {
-  color: #FFFFFF;
+  color: $color-secondary_white;
   font-size: 2.5em;
   font-family: "Karla", sans-serif;
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
@@ -58,18 +66,18 @@ body {
 }
 
 .header_link a:link, .header_link a:visited {
-  color: #FFFFFF;
+  color: $color-secondary_white;
   text-decoration: none;
 }
 
 .header_link a:hover, .header_link a:focus {
-  color: #CCCCCC;
+  color: $color-hover;
   text-decoration: none;
 }
 
 /* intro */
 .baggrund_intro {
-  background-color: #FFFFFF;
+  background-color: $color-secondary_white;
   height: 80vh;
 }
 
@@ -94,12 +102,12 @@ body {
 }
 
 .overskrift_1 {
-  color: #F7B09C;
+  color: $color-primary_pink;
   font-family: "Karla", sans-serif;
 }
 
 .overskrift_2 {
-  color: #EFE9DB;
+  color: $color-secondary_beige;
   font-family: "Rock Salt";
 }
 
@@ -107,7 +115,7 @@ body {
   padding-top: 5%;
   font-family: "Karla", sans-serif;
   font-size: 2rem;
-  color: #F7B09C;
+  color: $color-primary_pink;
   z-index: 100;
 }
 
@@ -143,7 +151,7 @@ body {
 
 /* Hvem er vi */
 .baggrund_hvem {
-  background-color: #F6F6EE;
+  background-color: $color-secondary_offwhite;
 }
 
 .container_1 {
@@ -158,7 +166,7 @@ body {
 .hvem {
   font-family: "Rock Salt";
   font-size: 2rem;
-  color: #F7B09C;
+  color: $color-primary_pink;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,13 +225,13 @@ body {
 .navn_1 {
   font-family: "Karla", sans-serif;
   font-size: 2rem;
-  color: #EFE9DB;
+  color: $color-secondary_beige;
 }
 
 .bio_1 {
   font-family: "Karla", sans-serif;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: $color-secondary_white;
 }
 
 .parent-container_2 {
@@ -285,13 +293,13 @@ body {
 .navn_2 {
   font-family: "Karla", sans-serif;
   font-size: 2rem;
-  color: #EFE9DB;
+  color:$color-secondary_beige;
 }
 
 .bio_2 {
   font-family: "Karla", sans-serif;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: $color-secondary_white;
 }
 
 .pil_op {
@@ -325,9 +333,10 @@ body {
   width: 60vw;
 }
 
+
 /* ydelser */
 .baggrund_ydelser {
-  background-color: #FFFFFF;
+  background-color: $color-secondary_white;
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 4%;
@@ -345,7 +354,7 @@ body {
 .ydelser {
   font-family: "Rock Salt";
   font-size: 2rem;
-  color: #A5BFB3;
+  color: $color-primary_blå;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,7 +377,7 @@ body {
 .ydelser_tekst {
   font-family: "Karla", sans-serif;
   font-size: 1.5rem;
-  color: #A5BFB3;
+  color: $color-primary_blå;
   display: flex;
   padding-top: 4%;
   text-align: left;
@@ -397,7 +406,7 @@ body {
 
 /* cases */
 .baggrund_cases {
-  background-color: #A5BFB3;
+  background-color: $color-primary_blå;
   border-radius: 15%;
   padding: 2%;
   margin-top: 5%;
@@ -406,7 +415,7 @@ body {
 .cases {
   font-family: "Rock Salt";
   font-size: 2rem;
-  color: #FFFFFF;
+  color: $color-secondary_white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,12 +529,12 @@ body {
   margin-top: 5%;
   width: 100%;
   height: 40vh;
-  background-color: #F7B09C;
+  background-color: $color-primary_pink;
 }
 
 .footer_tekst {
   position: absolute;
-  color: #FFFFFF;
+  color: $color-secondary_white;
   font-size: 2rem;
   font-family: "Rock Salt";
   word-wrap: break-word;
@@ -560,12 +569,14 @@ body {
     padding-right: 2%;
   }
   .header_link a {
-    font-size: 0.8rem;
-  }
+      font-size: 0.8rem;
+    }
+  
   /* intro */
   .baggrund_intro {
     height: 70vh;
   }
+
   .indhold_intro {
     margin-bottom: 5%;
     left: 4%;
@@ -586,50 +597,61 @@ body {
   .form img {
     width: 30vh;
   }
-  /* striber */
-  .vandfald_1 {
-    margin-top: 56vh;
-    width: 32vw;
-  }
+
+/* striber */
+.vandfald_1 {
+  margin-top: 56vh;
+  width: 32vw;
+}
+
   /* hvem */
   .container_1 {
     margin-top: 10%;
   }
+
   .hvem {
-    font-size: 1rem;
-    justify-content: left;
-    margin-left: 4%;
+  font-size: 1rem;
+  justify-content: left;
+  margin-left: 4%;
   }
+
   .parent-container_1 {
     position: relative;
     height: 65vh;
   }
+  
   .rektangel_1 {
     margin-top: 22vh;
     position: absolute;
     height: 30vh;
     width: 100%;
   }
+  
   .Vandfarve_effekt_1 {
     width: 100vw;
     height: 25vh;
   }
+  
   .profil-photo_1 {
     width: 40vw;
     height: auto;
     margin-left: 25%;
     top: 0%;
   }
+  
   .container_profil_1 {
     margin-top: 22.5vh;
     padding-left: 4%;
   }
+  
   .navn_1 {
     font-size: 1.2rem;
   }
+  
   .bio_1 {
     font-size: 0.9rem;
   }
+  
   .parent-container_2 {
     position: relative;
     height: 45vh;
@@ -637,11 +659,13 @@ body {
     margin-right: 0%;
     padding-top: 5%;
   }
+  
   .rektangel_2 {
     margin-top: 8vh;
     height: 30vh;
     width: 100%;
   }
+  
   .Vandfarve_effekt_2 {
     width: 100vw;
     height: 25vh;
@@ -649,6 +673,7 @@ body {
     left: 1%;
     z-index: 3;
   }
+  
   .profil-photo_2 {
     width: 50vw;
     height: auto;
@@ -656,6 +681,7 @@ body {
     top: 0%;
     margin-bottom: 30vh;
   }
+  
   .container_profil_2 {
     position: absolute;
     margin-top: 8vh;
@@ -663,75 +689,97 @@ body {
     padding-left: 4%;
     z-index: 5;
   }
+  
   .navn_2 {
     font-size: 1.2rem;
   }
+  
   .bio_2 {
     font-size: 0.9rem;
   }
+  
   .pil_op {
     bottom: 5%;
   }
+  
+
   .video_1_str {
     width: 80vw;
   }
+  
   /* ydelser */
   .baggrund_ydelser {
     border-radius: 10%;
   }
+
   .container_ydelser {
     display: flex;
     flex-direction: column;
-  }
+}
+
   .ydelser {
     font-size: 1.2rem;
   }
+  
   .video_2_str {
     width: 80vw;
   }
+  
   .ydelser_tekst {
     font-size: 0.9rem;
     width: 80vw;
     margin-left: 0%;
   }
+  
   .pil_op_højre {
     bottom: -2%;
   }
+
   .pil_op_img_højre {
     width: 8vw;
   }
+  
   /* cases */
   .cases {
     font-size: 1rem;
   }
+  
   .pil_cases {
     width: 8vw;
   }
+  
   .prikker_1 {
     width: 10vw;
   }
+
   .pil_op_img {
     width: 8vw;
   }
+  
   /* footer */
+  
   .footer {
     height: 15vh;
   }
+  
   .footer_tekst {
     font-size: 0.7rem;
     margin-left: 3%;
     padding-top: 5%;
   }
+  
   .sm_logo {
     margin-left: 85%;
     display: flex;
     flex-direction: column;
     width: 10vw;
   }
+
   #sm_logo_id {
-    padding: 20%;
-    padding-bottom: 5%;
+   padding: 20%;
+   padding-bottom: 5%;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
+     
